@@ -1,12 +1,12 @@
-var a = Array.prototype.slice.call(document.querySelectorAll('.cat-tile-text')).filter(function (value, index) {
+var alienwareTileContent = Array.prototype.slice.call(document.querySelectorAll('.cat-tile-text')).filter(function (value, index) {
     return value.innerText.includes('Alienware')
 })
 
-var b = a[0].parentElement.parentElement
+var alienwareTile = alienwareTileContent[0].parentElement.parentElement
 
-var c1 = a[0].parentElement.parentElement.parentElement.children[1]
+var beforeAlienWareTile = alienwareTileContent[0].parentElement.parentElement.parentElement.children[1]
 
-a[0].parentElement.parentElement.parentElement.insertBefore(b, c1)
+alienwareTileContent[0].parentElement.parentElement.parentElement.insertBefore(alienwareTile, beforeAlienWareTile)
 
 
 

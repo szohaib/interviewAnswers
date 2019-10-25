@@ -1,6 +1,3 @@
-///1 to complete
-
-
 var buttons = $('.flexslider-wrapper').find('.dellmetrics-pl-tab')
 
 
@@ -47,7 +44,7 @@ for(var i = 0 ; i < camerasImages.length ; i++){
 		sum = sum + parseFloat(value.innerText.split(' $')[1])
 		return value
 	})
-	alert(sum)
+	alert(sum.toFixed(2))
 })()
 
 
